@@ -1,7 +1,10 @@
-function takeANumber(line, name) {
-  line.push(String(name))
+var counter = 0
+
+function takeANumber(line) {
+  counter += 1
+  line.push(String(counter))
   
-  return `Welcome, ${name}. You are number ${line.length} in line.`
+  return `Welcome, ${counter}. You are number ${line.length} in line.`
 }
 
 function nowServing(line) {
